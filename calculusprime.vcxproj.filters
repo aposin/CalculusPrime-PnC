@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{5d967a40-ea79-495f-8b89-84169b000f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cache">
+      <UniqueIdentifier>{01a22afb-753e-4cc4-b6ce-5eeb86042363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\internal">
+      <UniqueIdentifier>{71ed339a-63e3-47a2-bc4a-f0c1e83673a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\internal\parsing">
+      <UniqueIdentifier>{0012fba0-a7be-4952-8c29-f04a9fae685a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cache">
+      <UniqueIdentifier>{8f2ed7cb-48f1-47e6-b1c6-53578ca44e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\internal">
+      <UniqueIdentifier>{680c4fd2-825f-466c-8b49-d41dc02cb66e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\internal\parsing">
+      <UniqueIdentifier>{5850ca85-6149-48f3-97a3-457064a335fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\calculusprime\FunctionIdBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\IFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\IParsingContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\IRatingEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\Logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\RatingEngineException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\RatingEngineFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\RatingOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\Value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\cache\DefaultCacheFactory.h">
+      <Filter>Header Files\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\cache\DefaultFunctionResultCache.h">
+      <Filter>Header Files\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\cache\DefaultParseTreeCache.h">
+      <Filter>Header Files\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\cache\IFunctionResultCache.h">
+      <Filter>Header Files\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\cache\IParseTreeCache.h">
+      <Filter>Header Files\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\defs.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\ParsingContext.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\RatingEngine.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\require.h">
+      <Filter>Header Files\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\CollectingErrorListener.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\EvalException.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\EvalVisitor.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\Function.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\FunctionArgument.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\IValueHolder.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\LazyValueHolder.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\Parser.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\ParserHolder.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\ParsingException.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\calculusprime\internal\parsing\ValueHolder.h">
+      <Filter>Header Files\internal\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="generated\RatingEngineBaseListener.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="generated\RatingEngineBaseVisitor.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="generated\RatingEngineLexer.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="generated\RatingEngineListener.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="generated\RatingEngineParser.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="generated\RatingEngineVisitor.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="generated\RatingEngine.interp">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="generated\RatingEngine.tokens">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="generated\RatingEngineLexer.interp">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="generated\RatingEngineLexer.tokens">
+      <Filter>Generated</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="generated\RatingEngineBaseListener.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\RatingEngineBaseVisitor.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\RatingEngineLexer.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\RatingEngineListener.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\RatingEngineParser.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\RatingEngineVisitor.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\FunctionIdBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\Logging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\RatingEngineFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\cache\DefaultCacheFactory.cpp">
+      <Filter>Source Files\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\cache\DefaultFunctionResultCache.cpp">
+      <Filter>Source Files\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\cache\DefaultParseTreeCache.cpp">
+      <Filter>Source Files\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\internal\ParsingContext.cpp">
+      <Filter>Source Files\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\internal\RatingEngine.cpp">
+      <Filter>Source Files\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\internal\parsing\CollectingErrorListener.cpp">
+      <Filter>Source Files\internal\parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\internal\parsing\EvalVisitor.cpp">
+      <Filter>Source Files\internal\parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\internal\parsing\Function.cpp">
+      <Filter>Source Files\internal\parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\internal\parsing\LazyValueHolder.cpp">
+      <Filter>Source Files\internal\parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\internal\parsing\Parser.cpp">
+      <Filter>Source Files\internal\parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\internal\parsing\ParserHolder.cpp">
+      <Filter>Source Files\internal\parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calculusprime\internal\parsing\ValueHolder.cpp">
+      <Filter>Source Files\internal\parsing</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

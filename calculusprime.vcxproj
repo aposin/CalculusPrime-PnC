@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="generated\RatingEngineBaseListener.h" />
+    <ClInclude Include="generated\RatingEngineBaseVisitor.h" />
+    <ClInclude Include="generated\RatingEngineLexer.h" />
+    <ClInclude Include="generated\RatingEngineListener.h" />
+    <ClInclude Include="generated\RatingEngineParser.h" />
+    <ClInclude Include="generated\RatingEngineVisitor.h" />
+    <ClInclude Include="include\calculusprime\cache\DefaultCacheFactory.h" />
+    <ClInclude Include="include\calculusprime\cache\DefaultFunctionResultCache.h" />
+    <ClInclude Include="include\calculusprime\cache\DefaultParseTreeCache.h" />
+    <ClInclude Include="include\calculusprime\cache\IFunctionResultCache.h" />
+    <ClInclude Include="include\calculusprime\cache\IParseTreeCache.h" />
+    <ClInclude Include="include\calculusprime\FunctionIdBuilder.h" />
+    <ClInclude Include="include\calculusprime\IFunction.h" />
+    <ClInclude Include="include\calculusprime\internal\defs.h" />
+    <ClInclude Include="include\calculusprime\internal\ParsingContext.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\CollectingErrorListener.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\EvalException.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\EvalVisitor.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\Function.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\FunctionArgument.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\IValueHolder.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\LazyValueHolder.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\Parser.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\ParserHolder.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\ParsingException.h" />
+    <ClInclude Include="include\calculusprime\internal\parsing\ValueHolder.h" />
+    <ClInclude Include="include\calculusprime\internal\RatingEngine.h" />
+    <ClInclude Include="include\calculusprime\internal\require.h" />
+    <ClInclude Include="include\calculusprime\IParsingContext.h" />
+    <ClInclude Include="include\calculusprime\IRatingEngine.h" />
+    <ClInclude Include="include\calculusprime\Logging.h" />
+    <ClInclude Include="include\calculusprime\RatingEngineException.h" />
+    <ClInclude Include="include\calculusprime\RatingEngineFactory.h" />
+    <ClInclude Include="include\calculusprime\RatingOutput.h" />
+    <ClInclude Include="include\calculusprime\Value.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="generated\RatingEngine.interp" />
+    <None Include="generated\RatingEngine.tokens" />
+    <None Include="generated\RatingEngineLexer.interp" />
+    <None Include="generated\RatingEngineLexer.tokens" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="generated\RatingEngineBaseListener.cpp" />
+    <ClCompile Include="generated\RatingEngineBaseVisitor.cpp" />
+    <ClCompile Include="generated\RatingEngineLexer.cpp" />
+    <ClCompile Include="generated\RatingEngineListener.cpp" />
+    <ClCompile Include="generated\RatingEngineParser.cpp" />
+    <ClCompile Include="generated\RatingEngineVisitor.cpp" />
+    <ClCompile Include="src\calculusprime\cache\DefaultCacheFactory.cpp" />
+    <ClCompile Include="src\calculusprime\cache\DefaultFunctionResultCache.cpp" />
+    <ClCompile Include="src\calculusprime\cache\DefaultParseTreeCache.cpp" />
+    <ClCompile Include="src\calculusprime\FunctionIdBuilder.cpp" />
+    <ClCompile Include="src\calculusprime\internal\ParsingContext.cpp" />
+    <ClCompile Include="src\calculusprime\internal\parsing\CollectingErrorListener.cpp" />
+    <ClCompile Include="src\calculusprime\internal\parsing\EvalVisitor.cpp" />
+    <ClCompile Include="src\calculusprime\internal\parsing\Function.cpp" />
+    <ClCompile Include="src\calculusprime\internal\parsing\LazyValueHolder.cpp" />
+    <ClCompile Include="src\calculusprime\internal\parsing\Parser.cpp" />
+    <ClCompile Include="src\calculusprime\internal\parsing\ParserHolder.cpp" />
+    <ClCompile Include="src\calculusprime\internal\parsing\ValueHolder.cpp" />
+    <ClCompile Include="src\calculusprime\internal\RatingEngine.cpp" />
+    <ClCompile Include="src\calculusprime\Logging.cpp" />
+    <ClCompile Include="src\calculusprime\RatingEngineFactory.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3FDFD58E-65FE-4F02-9E9D-78E4AA73243D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>calculusprime</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="antlr.props" />
+    <Import Project="boost.props" />
+    <Import Project="log4cplus.props" />
+    <Import Project="calculusprime.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="antlr.props" />
+    <Import Project="boost.props" />
+    <Import Project="log4cplus.props" />
+    <Import Project="calculusprime.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="antlr.props" />
+    <Import Project="boost.props" />
+    <Import Project="log4cplus.props" />
+    <Import Project="calculusprime.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="antlr.props" />
+    <Import Project="boost.props" />
+    <Import Project="log4cplus.props" />
+    <Import Project="calculusprime.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)-MTd-x64</TargetName>
+    <OutDir>$(SolutionDir)\lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)-MT-x64</TargetName>
+    <OutDir>$(SolutionDir)\lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)-MT-x86</TargetName>
+    <OutDir>$(SolutionDir)\lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)-MTd-x86</TargetName>
+    <OutDir>$(SolutionDir)\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalIncludeDirectories>./include;./generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalIncludeDirectories>./include;./generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./include;./generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./include;./generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
